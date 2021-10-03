@@ -75,6 +75,7 @@ module.exports = {
         printRejected: false,
         develop: false,
         tailwind: true,
+        ignore: ['slick-carousel/']
       },
     }
   ],
