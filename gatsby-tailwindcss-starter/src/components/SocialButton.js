@@ -3,7 +3,7 @@ import ReactWhatsapp from 'react-whatsapp';
 
 function SocialButton() {
   return (
-    <ReactWhatsapp className="fixed shadow-xl bottom-10 right-10" number="+923357596907" message="">
+    <ReactWhatsapp className="fixed shadow-xl bottom-24 right-10" number="+923357596907" message="">
       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
         width="48" height="48"
         viewBox="0 0 172 172"

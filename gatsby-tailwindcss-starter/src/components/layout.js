@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <SocialButton />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   )
