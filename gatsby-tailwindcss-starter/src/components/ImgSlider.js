@@ -35,7 +35,15 @@ function ImgSlider() {
       autoplay: true,
       speed: 2000,
       autoplaySpeed: 5000,
-      cssEase: "ease-in-out"
+      cssEase: "ease-in-out",
+      responsive: [
+        {
+          breakpoint: 425,
+          settings: {
+            dots: false,
+          }
+        }
+      ]
     };
   return (
     <section className="relative w-screen" style={{left: "calc(100% - 100vw + (100vw - 100%) / 2)"}}>
