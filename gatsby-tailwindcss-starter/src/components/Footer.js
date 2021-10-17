@@ -16,7 +16,7 @@ function Footer() {
         }}>
           <Spacer />
           <h2 className="pb-6">Contact Info</h2>
-          <span className="font-semibold">Address: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          <span className="font-semibold">Address: </span>2B Intizar mkt shop no.6 nazimabad no.2, Karachi.
           <br />
           <span className="font-semibold">Phone: </span><a href="tel:+923357596907">+92 335 7596907</a>
         </div>
