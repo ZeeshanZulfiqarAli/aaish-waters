@@ -8,19 +8,25 @@ function Loader({ delay }) {
   const [remove, setRemove] = useState(false)
 
   useEffect(() => {
-    const t = setTimeout(()=> setRemove(true), delay)
+    const bodyEl = document.querySelector("body");
+    bodyEl.classList.add("overflow-hidden");
+
+    const t = setTimeout(()=> {
+      setRemove(true);
+      bodyEl.classList.remove("overflow-hidden");
+    }, delay);
 
     return () => clearTimeout(t)
   },[])
 
   return (
-    <div className={classnames("fixed left-0 top-0 h-full w-full z-30 transition-transform duration-1000",{"transform -translate-y-full": remove})}>
+    <div className={classnames("fixed left-0 top-0 h-full w-screen z-50 overflow-hidden transition-transform duration-1000",{"transform -translate-y-full": remove})}>
       {/* <div className="object-cover"> */}
-        <video className="absolute object-cover h-full w-full  " src={water} autoPlay muted loop/>
-        <div className={classnames("absolute -bottom-1/4 w-full h-1/2 backdrop-filter backdrop-blur-3xl transition-transform delay-1000", {"transform -translate-y-full": remove})}/>
+        <video className="absolute object-cover h-full w-screen  " src={water} autoPlay muted loop/>
+        <div className={classnames("absolute -bottom-1/4 w-screen h-1/2 backdrop-filter backdrop-blur-3xl transition-transform delay-1000", {"transform -translate-y-full": remove})}/>
       {/* </div> */}
 
-      <img src={logo} alt="site logo" className="absolute w-full -top-14 h-full p-20 sm:p-40 object-scale-down"/>
+      <img src={logo} alt="site logo" className="absolute w-screen -top-14 h-full p-20 sm:p-40 object-scale-down"/>
 
     </div>
   )
