@@ -30,7 +30,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Loader delay={LoaderTime}/>
 
-      <div className={classnames("font-sans filter transition delay-500 duration-1000", {"blur-lg": !showContent, "blur-none": showContent})}>
+      <div className={classnames("font-sans transition delay-500 duration-1000", {"filter blur-lg": !showContent, "blur-none": showContent})}>
         <Menu />
         <ImgSlider />
         <Spacer />
