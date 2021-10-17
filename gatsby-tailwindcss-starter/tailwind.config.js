@@ -3,7 +3,13 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 // tailwind.config.js
 module.exports = {
   future: {},
-  purge: [],
+  purge: {
+    enabled: true,
+    content: ['./src/**/*.js'],
+    options: {
+      safelist: ['opened'],
+    }
+  },
   theme: {
     extend: {
       fontFamily: {

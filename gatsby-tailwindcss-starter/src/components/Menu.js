@@ -42,6 +42,7 @@ function Menu() {
   }
 
   const mobileRadius = useMemo(() => {
+    if (typeof window === 'undefined') return 0;
     const width = window.innerWidth, height = window.innerHeight;
     const radius = Math.round(0.33 * Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2)));
     return radius;
@@ -51,7 +52,7 @@ function Menu() {
     <nav className="h-24 flex my-10 place-content-between">
         <img src={logo} className="h-full"/>
         <div className="md:hidden" >
-          <button className={classnames("menu", {opened: showMobileMenu})} ref={menuButton} onClick={handleMobileMenuToggle} aria-label="Main Menu">
+          <button className={classnames("menu", {"opened": showMobileMenu})} ref={menuButton} onClick={handleMobileMenuToggle} aria-label="Main Menu">
             <svg style={{zIndex: 9999}} width="100" height="100" viewBox="0 0 100 100">
               <path className="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
               <path className="line line2" d="M 20,50 H 80" />
@@ -61,7 +62,7 @@ function Menu() {
         </div>
         <div className={classnames("md:hidden", {"block": showMobileMenu, "hidden": !showMobileMenu})}>
           <div className="fixed left-0 top-0 h-screen w-screen z-50">
-            <svg id="mobile-menu-background" viewBox="0 0 100vw 100vh" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg">
+            <svg id="mobile-menu-background" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg">
               <defs>
                   <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
                       <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>

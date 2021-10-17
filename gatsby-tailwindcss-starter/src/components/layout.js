@@ -17,6 +17,8 @@ import "./layout.css"
 
 function getScrollbarWidth() {
 
+  if (typeof document === `undefined`) return;
+
   // Creating invisible container
   const outer = document.createElement('div');
   outer.style.visibility = 'hidden';
