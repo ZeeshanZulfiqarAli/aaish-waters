@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import Menu from "../components/Menu"
 import Loader from "../components/Loader"
 import ImgSlider from "../components/ImgSlider"
+import Spacer from "../components/Spacer"
 import classnames from "classnames"
 
 const LoaderTime = 5000
@@ -28,7 +29,7 @@ const IndexPage = () => {
       <div className={classnames("font-sans filter transition delay-500 duration-1000", {"blur-lg": !showContent, "blur-none": showContent})}>
         <Menu />
         <ImgSlider />
-        <div className="h-10 md:h-20"/>
+        <Spacer />
         <h1>Hi people</h1>
         <p>Welcome to your new Gatsby site.</p>
         <p>Now go build something great.</p>

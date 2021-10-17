@@ -1,17 +1,30 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 h1 {
-  @apply text-2xl;
+  @apply text-4xl;
 }
 h2 {
-  @apply text-xl;
+  @apply text-2xl;
+  @apply tracking-wider;
 }
 h3 {
-  @apply text-lg;
+  @apply text-xl;
 }
+
 a {
   @apply text-blue-600;
 }
-
-@tailwind components;
-@tailwind utilities;
+@layer utilities {
+  @variants responsive {
+    .mid-footer {
+      left: calc(((100vw - 1024px - var(--scrollbar-width)) / -2) - 1.0875rem);
+      width: calc(100vw - var(--scrollbar-width));
+    }
+    .mobile-footer {
+      left: -1.0875rem;
+      width: 100vw;
+    }
+  }
+}
