@@ -9,6 +9,10 @@ import Loader from "../components/Loader"
 import ImgSlider from "../components/ImgSlider"
 import Spacer from "../components/Spacer"
 import classnames from "classnames"
+import AboutUs from "../components/AboutUs";
+import Products from "../components/Products";
+import Services from "../components/Services";
+import Certifications from "../components/Certifications";
 
 const LoaderTime = 5000
 
@@ -30,15 +34,14 @@ const IndexPage = () => {
         <Menu />
         <ImgSlider />
         <Spacer />
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <section id="offers" >
-          <h2>Our offers</h2>
-        </section>
-        <section id="offers" >
-          <h2>Our offers</h2>
-        </section>
+        <AboutUs />
+        <Spacer />
+        <Services />
+        <Spacer />
+        <Products />
+        <Spacer />
+        <Certifications />
+        <Spacer />
       </div>
     </Layout>
   )
