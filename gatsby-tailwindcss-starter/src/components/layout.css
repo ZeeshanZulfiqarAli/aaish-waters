@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 h1 {
-  @apply text-4xl;
+  @apply text-3xl;
+  @apply tracking-wider;
 }
 h2 {
   @apply text-2xl;
