@@ -34,6 +34,10 @@ module.exports = {
     //     'p4': '#a1d9ee',
     // })
   },
-  variants: {},
+  variants: {
+    extend: {
+      borderWidth: ['hover'],
+    }
+  },
   plugins: [],
 }
