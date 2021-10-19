@@ -20,20 +20,56 @@ const productList = [
     imgSrc: bottle,
     imgAlt: "sample img",
     price: 120,
-  }
+  },
+  {
+    title: "19 ltr bottle",
+    imgSrc: bottle,
+    imgAlt: "sample img",
+    price: 120,
+  },
+  {
+    title: "19 ltr bottle",
+    imgSrc: bottle,
+    imgAlt: "sample img",
+    price: 120,
+  },
+  {
+    title: "19 ltr bottle",
+    imgSrc: bottle,
+    imgAlt: "sample img",
+    price: 120,
+  },
+  {
+    title: "19 ltr bottle",
+    imgSrc: bottle,
+    imgAlt: "sample img",
+    price: 120,
+  },
+  {
+    title: "19 ltr bottle",
+    imgSrc: bottle,
+    imgAlt: "sample img",
+    price: 120,
+  },
+  {
+    title: "19 ltr bottle",
+    imgSrc: bottle,
+    imgAlt: "sample img",
+    price: 120,
+  },
 ]
 function Products() {
 
   return (
     <section id="products">
       <h1>Our Products</h1>
-      <div className="p-4 leading-7 flex flex-row flex-wrap justify-between items-center">
+      <div className="p-4 relative gap-5 leading-7 flex flex-row flex-wrap justify-between items-center">
         {
           productList.map(product => (
             <ImgCard imgSrc={product.imgSrc} imgAlt={product.imgAlt} title={product.title} price={product.price}/>
           ))
         }
-      <svg  id="eC8geQ0GU6O1" xmlns="http://www.w3.org/2000/svg"
+      <svg className="absolute" style={{zIndex: -1}} id="eC8geQ0GU6O1" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 1000" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
           <defs>
               <filter id="eC8geQ0GU6O2-filter" x="-400%" width="600%" y="-400%" height="600%">
