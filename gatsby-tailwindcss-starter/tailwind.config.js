@@ -7,7 +7,7 @@ module.exports = {
     enabled: true,
     content: ['./src/**/*.js'],
     options: {
-      safelist: ['opened', 'mobile-menu-background', 'gradient-animation', 'circle'],
+      safelist: ['opened', 'mobile-menu-background', 'gradient-animation', 'circle', 'mobile-grad', 'mid-grad'],
     }
   },
   theme: {

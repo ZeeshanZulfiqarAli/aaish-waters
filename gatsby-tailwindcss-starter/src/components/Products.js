@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useRef, useEffect } from "react"
 import ImgCard from "./ImgCard";
 import bottle from "../../assets/media/bottlle1.jpeg"
 
@@ -39,27 +39,30 @@ const productList = [
     imgAlt: "sample img",
     price: 120,
   },
-  {
-    title: "19 ltr bottle",
-    imgSrc: bottle,
-    imgAlt: "sample img",
-    price: 120,
-  },
-  {
-    title: "19 ltr bottle",
-    imgSrc: bottle,
-    imgAlt: "sample img",
-    price: 120,
-  },
-  {
-    title: "19 ltr bottle",
-    imgSrc: bottle,
-    imgAlt: "sample img",
-    price: 120,
-  },
 ]
 function Products() {
+  const svgRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+  console.log("rerender outside useEffect");
+  useEffect(()=> {
+    console.log("rerender");
+    const bodyEl = document.querySelector("body");
+    const checkIsMobile = () => setIsMobile(bodyEl.offsetWidth > 640);
+    checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
 
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
+
+  const getSvgViewBox = () => {
+    console.log("---==", isMobile);
+    if ( isMobile ) {
+      return "0 0 1200 1000";
+    } else {
+      //mobile or tablet
+      return "-100 -100 200 600";
+    }
+  };
   return (
     <section id="products">
       <h1>Our Products</h1>
@@ -69,8 +72,8 @@ function Products() {
             <ImgCard imgSrc={product.imgSrc} imgAlt={product.imgAlt} title={product.title} price={product.price}/>
           ))
         }
-      <svg className="absolute" style={{zIndex: -1}} id="eC8geQ0GU6O1" xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 1000" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+      <svg ref={svgRef} className="absolute mobile-grad sm:mid-grad" style={{zIndex: -1}} id="eC8geQ0GU6O1" xmlns="http://www.w3.org/2000/svg"
+          viewBox={getSvgViewBox()} shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
           <defs>
               <filter id="eC8geQ0GU6O2-filter" x="-400%" width="600%" y="-400%" height="600%">
                   <feGaussianBlur id="eC8geQ0GU6O2-filter-blur-0" stdDeviation="50,50" result="result" />
