@@ -126,3 +126,86 @@ a {
 #mobile-menu-background > g > circle:nth-child(6){
   animation: gradient-animation-c6 10s linear infinite;
 }
+
+/* gradient background */
+@keyframes back-gradient-animation-eC8geQ0GU6O9 {
+  0%, 100%{ transform: matrix(2.335088, -0.406389, 0.247648, 1.422972, 720.404124, 379.074321); }
+	17%{ transform: matrix(2.335088, -0.406389, 0.247648, 1.422972, 730.46, 246.27); }
+	33%{ transform: matrix(2.335088, -0.406389, 0.247648, 1.422972, 610.83, 193.04); }
+  50%{ transform: matrix(2.335088, -0.406389, 0.247648, 1.422972, 483.01, 282.83); }
+  67%{ transform: matrix(2.335088, -0.406389, 0.247648, 1.422972, 504.18, 429.53); }
+	83%{ transform: matrix(2.335088, -0.406389, 0.247648, 1.422972, 632.84, 467.45); }
+}
+
+@keyframes back-gradient-animation-eC8geQ0GU6O8 {
+  0%, 100%{ transform: matrix(1.840619, -0.49982, 0.351191, 1.293285, 290.43, 422.25); }
+	17%{ transform: matrix(1.840619, -0.49982, 0.351191, 1.293285, 253.22, 369.24); }
+	33%{ transform: matrix(1.840619, -0.49982, 0.351191, 1.293285, 273.43, 313.72); }
+  50%{ transform: matrix(1.840619, -0.49982, 0.351191, 1.293285, 344.81, 308.28); }
+  67%{ transform: matrix(1.840619, -0.49982, 0.351191, 1.293285, 416.18, 363.8); }
+  83%{ transform: matrix(1.840619, -0.49982, 0.351191, 1.293285, 364.05, 425.13); }
+}
+@keyframes back-gradient-animation-eC8geQ0GU6O7 {
+  0%, 100%{ transform: matrix(1.969261, 0, 0, 1.576577, 470.286762, 467.446654); }
+	17%{ transform: matrix(1.969261, 0, 0, 1.576577, 395.43, 438.55); }
+	33%{ transform: matrix(1.969261, 0, 0, 1.576577, 395.43, 362.45); }
+  50%{ transform: matrix(1.969261, 0, 0, 1.576577, 455.31, 322.62); }
+  67%{ transform: matrix(1.969261, 0, 0, 1.576577, 519.2, 362.45); }
+	83%{ transform: matrix(1.969261, 0, 0, 1.576577, 530.85, 434.97); }
+}
+@keyframes back-gradient-animation-eC8geQ0GU6O6 {
+  0%, 100%{ transform: matrix(1.068642, 1.336818, -1.939377, 1.550324, 504.179925, 278.293635); }
+	17%{ transform: matrix(1.068642, 1.336818, -1.939377, 1.550324, 564.68, 212.45); }
+	33%{ transform: matrix(1.068642, 1.336818, -1.939377, 1.550324, 663.75, 212.45); }
+  50%{ transform: matrix(1.068642, 1.336818, -1.939377, 1.550324, 731.28, 297.7); }
+  67%{ transform: matrix(1.068642, 1.336818, -1.939377, 1.550324, 661.67, 383.88); }
+	83%{ transform: matrix(1.068642, 1.336818, -1.939377, 1.550324, 536.07, 381.85); }
+}
+@keyframes back-gradient-animation-eC8geQ0GU6O5 {
+  0%, 100%{ transform: matrix(1, 0, 0, 1, 395.430144, 362.446658); }
+	17%{ transform: matrix(1, 0, 0, 1, 404.5, 260.05); }
+	33%{ transform: matrix(1, 0, 0, 1, 328.78, 244.11); }
+  50%{ transform: matrix(1, 0, 0, 1, 255.05, 287.14); }
+  67%{ transform: matrix(1, 0, 0, 1, 268.85, 373.64); }
+	83%{ transform: matrix(1, 0, 0, 1, 335.78, 412.3); }
+}
+@keyframes back-gradient-animation-eC8geQ0GU6O4 {
+  0%, 100%{ transform: matrix(1.980221, 0, 0, 1.632376, 366.720198, 317.446655); }
+	17%{ transform: matrix(1.980221, 0, 0, 1.632376, 410.51, 425.28); }
+	33%{ transform: matrix(1.980221, 0, 0, 1.632376, 543.82, 425.28); }
+  50%{ transform: matrix(1.980221, 0, 0, 1.632376, 577.11, 342.23); }
+  67%{ transform: matrix(1.980221, 0, 0, 1.632376, 507.5, 301.64); }
+	83%{ transform: matrix(1.980221, 0, 0, 1.632376, 437.11, 293.79); }
+}
+@keyframes back-gradient-animation-eC8geQ0GU6O3 {
+  0%, 100%{ transform: matrix(2.638035, -0.459112, 0.270938, 1.556797, 445.144024, 546.498096); }
+  17%{ transform: matrix(2.638035, -0.459112, 0.270938, 1.556797, 479.31, 347.02); }
+	33%{ transform: matrix(2.638035, -0.459112, 0.270938, 1.556797, 328.78, 215.16); }
+	50%{ transform: matrix(2.638035, -0.459112, 0.270938, 1.556797, 302.49, 377.75); }
+  67%{ transform: matrix(2.638035, -0.459112, 0.270938, 1.556797, 356.09, 497.3); }
+}
+#eC8geQ0GU6O9 {
+  animation: back-gradient-animation-eC8geQ0GU6O9 10s linear infinite;
+}
+#eC8geQ0GU6O8 {
+  animation: back-gradient-animation-eC8geQ0GU6O8 10s linear infinite;
+}
+#eC8geQ0GU6O7 {
+  animation: back-gradient-animation-eC8geQ0GU6O7 10s linear infinite;
+}
+#eC8geQ0GU6O6 {
+  animation: back-gradient-animation-eC8geQ0GU6O6 10s linear infinite;
+}
+#eC8geQ0GU6O5 {
+  animation: back-gradient-animation-eC8geQ0GU6O5 10s linear infinite;
+}
+#eC8geQ0GU6O4 {
+  animation: back-gradient-animation-eC8geQ0GU6O4 10s linear infinite;
+}
+#eC8geQ0GU6O3 {
+  animation: back-gradient-animation-eC8geQ0GU6O3 10s linear infinite;
+}
+
+#eC8geQ0GU6O2 {
+  transform: matrix(0.75, 0, 0, 1, 200, 200);
+}
