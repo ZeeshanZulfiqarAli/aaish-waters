@@ -5,7 +5,7 @@ function AboutUs() {
   return (
     <section id="about" >
         <h1>About Us</h1>
-        <p className="p-4 leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam augue, tristique id convallis nec, commodo quis magna. Aliquam at ipsum egestas, cursus quam luctus, sagittis dolor. Praesent fringilla blandit egestas. Mauris aliquet consequat vulputate. Nulla ullamcorper lorem in magna tempor, id tristique turpis euismod.</p>
+        <p className="p-4 leading-7">We source our water from deep underground wells. It then goes through our 6-step quality process. This means that it meets strict standards for bottled water. And you can be sure to enjoy the same crisp, clean taste in every bottle.<br/>We add a light blend of minerals to our water to give it a pure and refreshing taste.</p>
     </section>
   )
 }

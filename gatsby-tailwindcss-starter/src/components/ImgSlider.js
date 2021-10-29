@@ -1,26 +1,25 @@
 import Slider from "react-slick";
-import { Link } from "gatsby"
-import logo from "../../assets/media/logo.png"
+// import { Link } from "gatsby"
+// import logo from "../../assets/media/logo.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import React from "react"
+import post1 from "../../assets/media/Post.png"
+import post2 from "../../assets/media/Post2.png"
+import post3 from "../../assets/media/Post3.png"
 
 const images = [
   {
-    src: "https://culligan.com.pk/wp-content/uploads/2021/06/8.jpg",
+    src: post1,
     alt: "sample image"
   },
   {
-    src: "https://culligan.com.pk/wp-content/uploads/2021/06/4.jpg",
+    src: post2,
     alt: "sample image"
   },
   {
-    src: "https://culligan.com.pk/wp-content/uploads/2021/06/1.jpg",
-    alt: "sample image"
-  },
-  {
-    src: "https://culligan.com.pk/wp-content/uploads/2021/06/2.jpg",
+    src: post3,
     alt: "sample image"
   }
 ];
@@ -34,7 +33,7 @@ function ImgSlider() {
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     cssEase: "ease-in-out",
     responsive: [
       {

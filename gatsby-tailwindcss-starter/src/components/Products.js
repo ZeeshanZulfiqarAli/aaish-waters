@@ -1,45 +1,46 @@
 import React, { useState, useRef, useEffect } from "react"
 import ImgCard from "./ImgCard";
 import bottle from "../../assets/media/bottlle1.jpeg"
+import handles from "../../assets/media/handles.jpg"
+import pump from "../../assets/media/pump.jpg"
+import nozzleStand from "../../assets/media/nozzle&stand.jpg"
+import manualdispenser from "../../assets/media/mnaualdispenser.jpg"
+import gradientVideo from "../../assets/media/grad_compressed.mp4"
 
 const productList = [
   {
-    title: "19 ltr bottle",
+    title: "20 ltr bottle",
     imgSrc: bottle,
     imgAlt: "sample img",
     price: 120,
+    extraText: "+Rs.700 refundable desposit",
   },
   {
-    title: "19 ltr bottle",
-    imgSrc: bottle,
+    title: "Handle Pair",
+    imgSrc: handles,
     imgAlt: "sample img",
-    price: 120,
+    price: 350,
   },
   {
-    title: "19 ltr bottle",
-    imgSrc: bottle,
+    title: "Pump",
+    imgSrc: pump,
     imgAlt: "sample img",
-    price: 120,
+    // price: 120,
   },
   {
-    title: "19 ltr bottle",
-    imgSrc: bottle,
+    title: "Nozzle & Stand",
+    imgSrc: nozzleStand,
     imgAlt: "sample img",
-    price: 120,
+    price: 450,
   },
   {
-    title: "19 ltr bottle",
-    imgSrc: bottle,
+    title: "Manual Dispenser",
+    imgSrc: manualdispenser,
     imgAlt: "sample img",
-    price: 120,
-  },
-  {
-    title: "19 ltr bottle",
-    imgSrc: bottle,
-    imgAlt: "sample img",
-    price: 120,
-  },
-]
+    price: 1500,
+  }
+];
+
 function Products() {
   const svgRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -69,10 +70,11 @@ function Products() {
       <div className="p-4 relative gap-5 leading-7 flex flex-row flex-wrap justify-between items-center">
         {
           productList.map(product => (
-            <ImgCard imgSrc={product.imgSrc} imgAlt={product.imgAlt} title={product.title} price={product.price}/>
+            <ImgCard {...product}/>
           ))
         }
-      <svg ref={svgRef} className="absolute mobile-grad sm:mid-grad" style={{zIndex: -1}} id="eC8geQ0GU6O1" xmlns="http://www.w3.org/2000/svg"
+      <video src={gradientVideo} muted autoPlay loop playsinline className="filter blur-xl absolute mobile-grad sm:mid-grad" style={{zIndex: -1}}/>
+      {/* <svg ref={svgRef} className="absolute mobile-grad sm:mid-grad" style={{zIndex: -1}} id="eC8geQ0GU6O1" xmlns="http://www.w3.org/2000/svg"
           viewBox={getSvgViewBox()} shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
           <defs>
               <filter id="eC8geQ0GU6O2-filter" x="-400%" width="600%" y="-400%" height="600%">
@@ -123,7 +125,7 @@ function Products() {
                   transform="matrix(2.335088 -0.406389 0.247648 1.422972 720.404124 379.074321)" opacity="0.7"
                   filter="url(#eC8geQ0GU6O9-filter)" fill="rgb(145,89,255)" stroke="none" stroke-width="1" />
           </g>
-      </svg>
+      </svg> */}
       </div>
     </section>
   )

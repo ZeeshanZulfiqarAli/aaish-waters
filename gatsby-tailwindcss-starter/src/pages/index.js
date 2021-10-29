@@ -36,8 +36,8 @@ const IndexPage = () => {
         <Spacer />
         <AboutUs />
         <Spacer />
-        <Services />
-        <Spacer />
+        {/* <Services /> */}
+        {/* <Spacer /> */}
         <Products />
         <Spacer />
         <Certifications />
