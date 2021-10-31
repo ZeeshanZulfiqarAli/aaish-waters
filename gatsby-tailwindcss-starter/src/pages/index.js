@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,7 +9,7 @@ import Spacer from "../components/Spacer"
 import classnames from "classnames"
 import AboutUs from "../components/AboutUs";
 import Products from "../components/Products";
-import Services from "../components/Services";
+// import Services from "../components/Services";
 import Certifications from "../components/Certifications";
 
 const LoaderTime = 5000

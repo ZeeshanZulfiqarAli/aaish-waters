@@ -47,11 +47,11 @@ function Products() {
       <h1>Our Products</h1>
       <div className="p-4 relative gap-5 leading-7 flex flex-row flex-wrap justify-between items-center">
         {
-          productList.map(product => (
-            <ImgCard {...product}/>
+          productList.map((product, idx) => (
+            <ImgCard {...product} key={idx}/>
           ))
         }
-      <video src={gradientVideo} muted autoPlay loop playsinline className="filter blur-xl absolute mobile-grad sm:mid-grad" style={{zIndex: -1}}/>
+      <video src={gradientVideo} muted autoPlay loop className="filter blur-xl absolute mobile-grad sm:mid-grad" style={{zIndex: -1}}/>
       </div>
     </section>
   )

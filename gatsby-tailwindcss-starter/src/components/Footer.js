@@ -5,11 +5,11 @@ function Footer() {
 
   return (
     <footer className="relative bottom-0 h-80 w-full">
-      <div className="absolute inset-x-0 h-full animate-footer-gradient-shift mobile-footer lg:mid-footer" style={{
+      <div className="absolute inset-x-0 h-full animate-footer-gradient-shift mobile-footer lg:mid-footer flex flex-col justify-center" style={{
         background: 'linear-gradient(270deg, #ffd7ec, #31b8d7, #a1eee4, #a1d9ee)',
         backgroundSize: '800% 800%',
       }}>
-        <div className="h-full" style={{
+        <div className="h-full w-full" style={{
           margin: `0 auto`,
           maxWidth: 1024,
           padding: `0 1.0875rem 1.45rem`,

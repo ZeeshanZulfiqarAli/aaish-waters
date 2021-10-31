@@ -5,9 +5,9 @@ module.exports = {
   future: {},
   purge: {
     enabled: true,
-    content: ['./src/**/*.js'],
+    content: ['./src/**/*.js', './src/components/layout.css'],
     options: {
-      safelist: ['opened', 'mobile-menu-background', 'gradient-animation', 'circle', 'mobile-grad', 'mid-grad'],
+      safelist: ['opened', 'mobile-menu-background', 'gradient-animation', 'circle', 'mobile-grad', 'mid-grad', '___gatsby', 'overflow-hidden', 'mt-8'],
     }
   },
   theme: {
@@ -26,17 +26,12 @@ module.exports = {
         'footer-gradient-shift': 'footer-gradient-shift 30s ease infinite',
       }
     },
-    // gradientColorStops: theme => ({
-    //     ...theme('colors'),
-    //     'p1': '#7bd7ec',
-    //     'p2': '#31b8d7',
-    //     'p3': '#a1eee4',
-    //     'p4': '#a1d9ee',
-    // })
   },
   variants: {
     extend: {
       borderWidth: ['hover'],
+      fontWeight: ['active'],
+      borderOpacity: ['active'],
     }
   },
   plugins: [],

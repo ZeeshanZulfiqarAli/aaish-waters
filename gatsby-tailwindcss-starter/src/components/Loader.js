@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React, { useState, useEffect } from "react"
 import water from "../../assets/media/water.mp4"
 import logo from "../../assets/media/logo.png"

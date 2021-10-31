@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-#___gatsby {
+html {
+  scroll-behavior: smooth;
+}
+
+body > div {
   @apply overflow-hidden;
-  @apply mt-8;
 }
 
 h1 {
