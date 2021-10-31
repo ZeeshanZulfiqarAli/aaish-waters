@@ -1,15 +1,15 @@
 import React from "react"
-import report1 from "../../assets/media/report1.jpeg"
-import report2 from "../../assets/media/report2.jpeg"
+import { StaticImage } from "gatsby-plugin-image"
 
-function Certifications() {
+const Certifications = () => {
 
   return (
     <section id="certifications">
       <h1>Certifications</h1>
       <div className="mt-7 flex w-full flex-wrap lg:flex-nowrap justify-center items-center gap-7">
-        <img src={report1} alt="KW&SB water report" className="w-6/12"/>
-        <img src={report2} alt="QLS water report" className="w-6/12"/>
+      <StaticImage src="../../assets/media/report1.jpeg" alt="KW&SB water report" className="w-6/12"/>
+      <StaticImage src="../../assets/media/report2.jpeg" alt="QLS water report" className="w-6/12"/>
+      <StaticImage src="../../assets/media/report3.jpg" alt="AKU water report" className="w-6/12"/>
       </div>
     </section>
   )

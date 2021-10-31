@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+#___gatsby {
+  @apply overflow-hidden;
+  @apply mt-8;
+}
+
 h1 {
   @apply text-3xl;
   @apply tracking-wider;
@@ -211,6 +216,7 @@ a {
     left: 0;
     right: 0;
     top: 0;
+    max-width: 100%;
   }
 
   .mid-grad > #eC8geQ0GU6O2 {
@@ -219,9 +225,10 @@ a {
 }
 
 .mobile-grad {
-  left: -1.0875rem;
+  left: -14.0875rem;;
   right: -1.0875rem;
   top: -100px;
+  max-width: unset;
 }
 
 .mobile-grad > #eC8geQ0GU6O2 {

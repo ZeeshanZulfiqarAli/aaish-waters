@@ -10,10 +10,10 @@ const menuItems = [
     title: "Certifications",
     slug: "#certifications",
   },
-  {
-    title: "Services",
-    slug: "#services",
-  },
+  // {
+  //   title: "Services",
+  //   slug: "#services",
+  // },
   {
     title: "About Us",
     slug: "#about",
