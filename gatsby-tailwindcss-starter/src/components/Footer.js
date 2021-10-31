@@ -19,6 +19,8 @@ function Footer() {
           <span className="font-semibold">Address: </span>2B Intizar mkt shop no.6 nazimabad no.2, Karachi.
           <br />
           <span className="font-semibold">Phone: </span><a href="tel:+923357596907">+92 335 7596907</a>
+          <br />
+          <span className="font-semibold">Email: </span><a href="mailto:ab.hussain1998@gmail.com">ab.hussain1998@gmail.com</a>
         </div>
         <div className="relative bg-gray-700 font-mono text-center text-gray-300 bottom-0 w-full p-4">
           Made with &#x1F499; by <a href="" className="text-current underline hover:text-gray-100">Zeeshan</a>

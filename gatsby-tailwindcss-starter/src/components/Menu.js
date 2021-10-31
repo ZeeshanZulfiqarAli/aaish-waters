@@ -55,6 +55,7 @@ function Menu() {
   }
 
   const handleLinkProps = (obj, item, itemIdx) => {
+    if (typeof window === 'undefined') return;
     isLinkActive(obj) ? item.isActive = true : item.isActive = false
     itemIdx === menuItems.length-1 && setInvokeRerender(obj.location.href); // inefficient, but will work for now
   }
